@@ -39,7 +39,6 @@ resource "aws_lambda_function" "gitdog_example" {
   runtime          = "python3.10"
   layers           = [aws_lambda_layer_version.layer_gitdog_example.arn]
 
-
   timeout     = 60
   memory_size = 128
   publish     = true
